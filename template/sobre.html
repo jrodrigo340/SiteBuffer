@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre · Pato Confeiteiro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header>
+    <div class="barra">
+      <a class="logo" href="index.html">Pato Confeiteiro</a>
+      <nav aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="simulador.html">Simulador</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="sobre.html" aria-current="page">Sobre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="duas-colunas">
+      <div>
+        <h1>Sobre e dúvidas</h1>
+        <p>O Pato Confeiteiro é um sistema de pedidos de confeitaria feito para praticar HTML, CSS e JavaScript.</p>
+      </div>
+      <img class="img-pato" src="img/sobre.jpg" alt="Pato confeiteiro apontando para um quadro com o passo a passo do pedido">
+    </section>
+
+    <h2>Tabela de preços por categoria</h2>
+    <table>
+      <caption>Faixa de preço de cada categoria</caption>
+      <thead>
+        <tr>
+          <th>Categoria</th>
+          <th>Itens</th>
+          <th>Faixa de preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Doces</td><td>2</td><td>R$ 3,00 a R$ 3,50</td></tr>
+        <tr><td>Bolos</td><td>2</td><td>R$ 8,00 a R$ 9,00</td></tr>
+        <tr><td>Tortas</td><td>2</td><td>R$ 10,00 a R$ 11,00</td></tr>
+        <tr><td>Bebidas</td><td>2</td><td>R$ 5,00 a R$ 6,00</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Como funciona</h2>
+    <ol>
+      <li>Faça o cadastro com seus dados.</li>
+      <li>Escolha os itens no catálogo e confira o total no simulador.</li>
+      <li>O pedido é preparado e depois entregue ou retirado.</li>
+    </ol>
+
+    <h2>Perguntas frequentes</h2>
+    <div class="faq-item">
+      <button type="button" aria-expanded="false" aria-controls="r1">Como funciona o desconto?</button>
+      <div class="resposta" id="r1" hidden>De 5 a 9 unidades do mesmo item, 10% de desconto. Com 10 ou mais, 15%.</div>
+    </div>
+    <div class="faq-item">
+      <button type="button" aria-expanded="false" aria-controls="r2">Preciso me cadastrar para ver o catálogo?</button>
+      <div class="resposta" id="r2" hidden>Não. O cadastro só é necessário para fazer pedidos.</div>
+    </div>
+    <div class="faq-item">
+      <button type="button" aria-expanded="false" aria-controls="r3">Posso misturar itens no mesmo pedido?</button>
+      <div class="resposta" id="r3" hidden>No simulador você calcula um item por vez. Some os resultados para um pedido misto.</div>
+    </div>
+  </main>
+
+  <footer>Pato Confeiteiro · projeto de HTML, CSS e JavaScript</footer>
+
+  <script src="js/faq.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo · Pato Confeiteiro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header>
+    <div class="barra">
+      <a class="logo" href="index.html">Pato Confeiteiro</a>
+      <nav aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html" aria-current="page">Catálogo</a>
+        <a href="simulador.html">Simulador</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="sobre.html">Sobre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Catálogo</h1>
+
+    <div class="filtro">
+      <div>
+        <label for="filtro">Filtrar por categoria</label>
+        <select id="filtro">
+          <option value="todas">Todas</option>
+        </select>
+      </div>
+      <p id="resumo" class="caixa" aria-live="polite"></p>
+    </div>
+
+    <section class="grade" id="grade" aria-label="Itens do catálogo"></section>
+  </main>
+
+  <footer>Pato Confeiteiro · projeto de HTML, CSS e JavaScript</footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+</html>
