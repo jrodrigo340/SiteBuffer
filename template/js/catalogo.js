@@ -20,6 +20,7 @@ function mostrar(lista) {
       <div class="emoji" aria-hidden="true">${p.emoji}</div>
       <h3>${p.nome}</h3>
       <p class="categoria">${p.categoria}</p>
+      ${p.descricao ? `<p>${p.descricao}</p>` : ""}
       <p class="preco">${formatarReais(p.preco)}</p>`;
     grade.appendChild(cartao);
   });
