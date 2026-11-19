@@ -39,7 +39,7 @@ function criarLinha() {
   const remover = document.createElement("button");
   remover.type = "button";
   remover.className = "botao-remover";
-  remover.textContent = "×";
+  remover.textContent = "x";
   remover.setAttribute("aria-label", "Remover item");
   remover.addEventListener("click", () => {
     linha.remove();
