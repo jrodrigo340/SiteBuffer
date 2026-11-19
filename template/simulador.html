@@ -26,16 +26,15 @@
     <section class="duas-colunas">
       <div>
         <h1>Simulador de pedido</h1>
-        <p>Escolha o item e a quantidade. A partir de 5 unidades há 10% de desconto, e a partir de 10, 15%.</p>
+        <p>Adicione quantos itens diferentes quiser, incluindo os kits, e informe a quantidade de cada um. A partir de 5 unidades do mesmo item há 10% de desconto, e a partir de 10, 15%.</p>
 
         <form id="form-simulador" class="caixa" novalidate>
-          <label for="item">Item</label>
-          <select id="item"></select>
+          <div id="itens"></div>
 
-          <label for="quantidade">Quantidade</label>
-          <input id="quantidade" type="number" min="1" value="1">
-
-          <p><button class="botao" type="submit">Calcular total</button></p>
+          <p class="acoes">
+            <button class="botao" type="button" id="adicionar-item">Adicionar item</button>
+            <button class="botao" type="submit">Calcular total</button>
+          </p>
 
           <div id="saida" class="resultado" aria-live="polite">O total aparece aqui.</div>
         </form>
